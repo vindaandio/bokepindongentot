@@ -40,7 +40,7 @@ export async function generateMetadata(
     }
 
     const file = data.result[0];
-    const title = `${file.title} - ${SITENAME}`;
+    const title = `${file.title}`;
     const description = `${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`;
     const image = file.splash_img;
     const previousOgImages = (await parent).openGraph?.images || [];
@@ -85,11 +85,11 @@ export default async function Video({ params }: PageProps) {
 const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'VideoObject',
-        name: `${file.title} - ${SITENAME}`,
+        name: `${file.title}`,
         thumbnailUrl: file.splash_img,
         description: `${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
         url: `https://bokepindongentot.pages.dev/v/${file.filecode}`,
-        embedUrl: `https://${upstream}/e/${file.filecode}`,
+        embedUrl: `https://doodstream.com/e/${file.filecode}`,
         uploadDate: new Date(
             file.uploaded + ".000Z"
         ).toISOString(),
@@ -105,7 +105,7 @@ const jsonLd = {
         const jsonLd2 = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: `${file.title} - ${SITENAME}`,
+        headline: `${file.title}`,
         image: file.splash_img,
         description: `${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
         url: `https://bokepindongentot.pages.dev/v/${file.filecode}`,
@@ -133,7 +133,7 @@ const jsonLd = {
         const jsonLd3 = {
             '@context': 'https://schema.org', 
             '@type': 'Book', 
-            'name': `${file.title} - ${SITENAME}`, 
+            'name': `${file.title}`, 
             'aggregateRating': {
             '@type': 'AggregateRating',	
                 'ratingValue': '5',	
@@ -162,7 +162,7 @@ const jsonLd = {
         </section>
             <iframe
                 className="w-full h-[30vh] md:h-[55vh] lg:h-[70vh]"
-                src={`https://${upstream}/e/${file.filecode}`}
+                src={`https://doodstream.com/e/${file.filecode}`}
                 scrolling="no"
                 title={file.title}
                 frameBorder={0}
@@ -174,9 +174,8 @@ const jsonLd = {
                         {file.title}
                     </CardTitle>
                 </CardHeader>
-                
-            </Card>
             <p>{file.title} di {SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma korea china tante live paksa ngentot abg cewek pijat pelajar Hijab Abg Colmek Film Tante Hot Twitter Asia Download Live stw <a href="https://bokepindongentot.pages.dev/c/1379174">Bokep Bocil</a> situs bokep indonesia jepang barat korea japan jav cina japanese <a href="https://bokepindongentot.pages.dev/c/485581">Bokep Indo</a> china rusia arab india thailand nonton link sd crot playbokep simontok bokepin montok baru perawan anak kecil <a href="https://bokepindongentot.pages.dev/c/1379173">Bokep Jepang</a> telegram selingkuh ojol cantik gay vidio lokal artis pelajar janda streaming <a href="https://bokepindongentot.pages.dev/c/1379183">Bokep Perkosa</a> hd anime hentai bokepind gudang avtub pijat sotwe <a href="https://bokepindongentot.pages.dev/c/1379179">Bokep Jilbab</a> rumah pemerkosaan inggris xpanas pure tobrut vcs ngintip binor remaja yandex update <a href="https://bokepindongentot.pages.dev/c/1379181">Bokep Smp</a> perselingkuhan wiki raja full com porno indoh</p>
+            </Card>
             <h2 className="text-2xl font-bold text-center my-4">
                 Related Video {file.title}
             </h2>
